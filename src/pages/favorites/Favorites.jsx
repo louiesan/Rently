@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import PropsCard from "../../component/propscard/PropsCard";
+import bookmark from "../../assets/bookmark.png";
 import { NavLink } from "react-router";
 
 export default function Favorites() {
@@ -15,7 +16,7 @@ export default function Favorites() {
       <h2 className="w-fit text-xl text-center sm:text-3xl font- gap-2bold font-[Poppins]">
         You haven't Save any Property yet!
       </h2>
-      <img className="w-52" src="/src/assets/bookmark.webp" alt="ErrorPng" />
+      <img className="w-52" src={bookmark} alt="FavPng" />
     </NavLink>
   );
 }
