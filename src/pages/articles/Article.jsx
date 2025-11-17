@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 import Loader from "../../component/loader/Loader";
-import article from "../../../public/article.json";
+import article from "../../article.json";
 export default function Article() {
   const { id } = useParams();
   const [articles, setArticles] = useState([]);
