@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import PropsCard from "../../component/propscard/PropsCard";
-import bookmark from "../../assets/bookmark.png";
+import bookmark from "../../assets/bookmark.webp";
 import { NavLink } from "react-router";
 
 export default function Favorites() {
