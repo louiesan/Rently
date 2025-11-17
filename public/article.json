@@ -1,0 +1,44 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Exploring Townhomes: A Perfect Blend of Space and Community",
+      "category": "Townhomes",
+      "image": "/src/assets/townhome.webp",
+      "excerpt": "Townhomes offer the comfort of a single-family home with the convenience of shared community living.",
+      "content": "Townhomes are multi-level homes that share one or two walls with neighboring units. They are ideal for people who want more space than an apartment but less maintenance than a detached house. Many townhome communities offer amenities like gyms, pools, or security services, making them a balanced choice for families and young professionals alike.",
+      "author": "RealEstate Insights",
+      "date": "2025-11-11"
+    },
+    {
+      "id": 2,
+      "title": "Why Apartments Are Still the Go-To Urban Choice",
+      "category": "Apartments",
+      "image": "/src/assets/apartement.webp",
+      "excerpt": "Apartments remain one of the most popular housing options for city dwellers across the world.",
+      "content": "Apartments provide flexibility, affordability, and convenience for people who want to live close to work, entertainment, and public transportation. They come in various sizes and styles — from compact studios to luxurious penthouses. Whether renting or owning, apartments are perfect for those seeking an urban lifestyle.",
+      "author": "City Living Magazine",
+      "date": "2025-11-11"
+    },
+    {
+      "id": 3,
+      "title": "Single-Family Homes: The Classic Dream",
+      "category": "Single Family Home",
+      "image": "/src/assets/singleFhome.webp",
+      "excerpt": "A timeless symbol of independence, space, and privacy — single-family homes remain a top choice for families.",
+      "content": "Single-family homes are detached properties with private yards and personal driveways. They offer unmatched privacy and space compared to shared housing. While they often require more maintenance, many homeowners see them as a long-term investment and the foundation for building family memories.",
+      "author": "Homeowner’s Journal",
+      "date": "2025-11-11"
+    },
+    {
+      "id": 4,
+      "title": "Condo Living: Luxury Meets Practicality",
+      "category": "Condos",
+      "image": "/src/assets/condo.webp",
+      "excerpt": "Condos combine modern comfort, shared amenities, and prime locations — all in one sleek package.",
+      "content": "Condos (short for condominiums) are privately owned units within a larger building or complex. Owners share amenities such as gyms, pools, or lounges. They’re perfect for people who value security and convenience but want to own rather than rent. Maintenance and exterior care are usually handled by the condo association.",
+      "author": "Modern Habitat",
+      "date": "2025-11-11"
+    }
+  ]
+}

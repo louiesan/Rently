@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@theme {
+  --breakpoint-mx: 862px;
+}
+.slick-slider {
+  display: flex !important;
+  flex-direction: column;
+  position: relative;
+}
+
+.slick-arrow.slick-prev {
+  position: absolute;
+  bottom: 0%;
+  left: 100px;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.slick-arrow.slick-prev {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex !important;
+  width: 100%;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.slick-slide {
+  height: auto !important;
+  max-height: 384px !important;
+  width: 100%;
+}
+
+.slick-slide > div {
+  height: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "Karla", sans-serif !important;
+  font-size: 20px;
+  background-color: #615fff;
+  border-radius: 2px;
+  padding: 10px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  opacity: 0.75;
+  color: white !important;
+  transition: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  z-index: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next {
+  right: 10px !important ;
+}
+.slick-next:before {
+  content: ">" !important;
+}
+.slick-prev {
+  left: 20px !important ;
+}
+.slick-prev:before {
+  content: "<" !important;
+}
+
+.slickImg .slider-slick {
+  max-height: 300px;
+}
+
+.slickImg .slick-list img {
+  border-radius: 5px;
+}
+
+.slickImg .slick-list .slick-track {
+  gap: 0px !important;
+}
+
+@media (min-width: 500px) and (max-width: 862px) {
+  .slickImg .slick-list img {
+    max-width: 400px;
+  }
+  .slickImg .slick-list .slick-track {
+    max-height: 300px;
+  }
+  .slickImg .slick-slide > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+    to bottom,
+    #dbeafe,
+    #e0f2fe,
+    #c7d2fe
+  ); /* blue-100 → sky-100 → indigo-200 */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #60a5fa,
+    #3b82f6,
+    #6366f1
+  ); /* blue-400 → blue-500 → indigo-500 */
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom,
+    #3b82f6,
+    #2563eb,
+    #4f46e5
+  ); /* darker on hover */
+}
