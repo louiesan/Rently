@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 import Loader from "../../component/loader/Loader";
+import article from "../../../public/article.json";
 export default function Article() {
   const { id } = useParams();
   const [articles, setArticles] = useState([]);
@@ -12,7 +13,7 @@ export default function Article() {
     async function fetchArticle() {
       try {
         setLoading(true);
-        const res = await fetch("./public/article.json");
+        const res = await fetch(article);
         if (!res.ok) throw new Error("ERROR OCCURED!");
         const json = await res.json();
         console.log(json);
