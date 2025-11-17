@@ -63,11 +63,11 @@ export default function Article() {
           Read More :
         </h2>
         <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5">
-          {articles.map((e) => (
+          {articles.map((e, i) => (
             <div className="w-full h-fit relative bg-white rounded-md p-2.5 flex flex-col items-center justify-center my-5">
               <img
                 className="w-full h-40 rounded-md relative drop-shadow-lg drop-shadow-black -top-5"
-                src={e.image}
+                src={imgArr[i]}
                 alt="Article_Image"
               />
               <h1 className="text-lg font-[Karla] font-bold text-indigo-900">
