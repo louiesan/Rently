@@ -1,13 +1,17 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 import Loader from "../../component/loader/Loader";
+import apartement from "../../assets/apartement.webp";
+import condo from "../../assets/condo.webp";
+import singleFhome from "../../assets/singleFhome.webp";
+import townhome from "../../assets/townhome.webp";
 export default function Article() {
   const { id } = useParams();
   const [articles, setArticles] = useState([]);
   const [Loading, setLoading] = useState(false);
   const index = articles?.findIndex((e) => e.id == id);
   console.log(index);
-
+  const imgArr = [townhome, apartement, singleFhome, condo];
   useEffect(() => {
     async function fetchArticle() {
       try {
@@ -34,7 +38,7 @@ export default function Article() {
         <div className="flex flex-wrap md:flex-nowrap gap-2.5">
           <img
             className="w-full md:max-w-1/2 max-h-80 rounded-md"
-            src={articles[index].image}
+            src={imgArr[index]}
             alt="Article_Image"
           />
           <div className="flex flex-col w-full h-fit">
