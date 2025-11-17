@@ -12,7 +12,7 @@ export default function Article() {
     async function fetchArticle() {
       try {
         setLoading(true);
-        const res = await fetch("/public/article.json");
+        const res = await fetch("./public/article.json");
         if (!res.ok) throw new Error("ERROR OCCURED!");
         const json = await res.json();
         console.log(json);
